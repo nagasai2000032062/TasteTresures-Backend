@@ -88,7 +88,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("https://tastetresures.netlify.app","https://9609-2401-4900-65b4-a8fd-5595-80dc-b4f4-8f94.ngrok-free.app/","http://localhost:3000"));
+        configuration.setAllowedOrigins(List.of("https://tastetresures.netlify.app/","https://9609-2401-4900-65b4-a8fd-5595-80dc-b4f4-8f94.ngrok-free.app/","http://localhost:3000"));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("Authorization", "Content-Type"));
         configuration.setAllowCredentials(true);
